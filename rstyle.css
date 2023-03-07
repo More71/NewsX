@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+html body{
+    background-color: whitesmoke;
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+nav{
+    background-color: gold;
+    width: 100%;
+    height: 80px;
+    
+}
+
+.logo{
+    color: #020102;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 0 0 100px;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px #24272c;
+    cursor: pointer;
+}
+
+.container{
+    margin-top: 2%;
+    width: 30%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #24272c;
+    text-align: center;
+}
+
+.container .title{
+    border-radius: 15px 15px 0 0;
+    line-height: 80px;
+    font-size: 35px;
+    background: grey;
+    color: gold;
+    font-weight: 600;
+}
+
+.container form{
+    padding: 20px;
+}
+
+.container form .row{
+    margin: 10px 0 10px 0;
+}
+
+.container form .row p{
+    font-size: 17px;
+    float: left;
+    margin-right: 30px;
+}
+
+.container form .row input{
+    height: 40px;
+    width: 80%;
+    margin: 4px 0 0 0;
+    padding: 0 4px 0 4px;
+    border: none;
+    background: lightgray;
+    border-radius: 8px;
+}
+
+.container form .row .submit{
+    height: 35px;
+    width: 50%;
+    background: gold;
+    color: #020102;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.container form .row .reset{
+    height: 35px;
+    width: 30%;
+    background: grey;
+    color: gold;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .logo{
+        font-size: 25px;
+        padding: 0 0 0 50px;
+        text-shadow: 1px 1px 3px #24272c;
+    }
+
+    .container{
+        margin-top: 30%;
+        width: 80%;
+    }
+
+    .container form .row p{
+        font-size: 16px;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 580px) and (max-width: 1000px){
+    .container{
+        margin-top: 20%;
+        width: 50%;
+    }
+}
+
